@@ -1,6 +1,8 @@
 # sample-website
 sample website using bootstrap
 
+HTML :
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -200,3 +202,59 @@ sample website using bootstrap
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
+CSS :
+
+/* styles.css */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #7190ae;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: white !important;
+}
+
+.header {
+    background: url('https://via.placeholder.com/1920x600') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    border-radius: 0;
+}
+
+.footer {
+    background-color: #6d849a;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #f8a0f2;
+}
