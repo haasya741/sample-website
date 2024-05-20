@@ -3,7 +3,6 @@ sample website using bootstrap
 
 HTML :
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +11,26 @@ HTML :
     <title>Complex Bootstrap Website</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="boot.css" rel="stylesheet">
+    <style>
+      
+        @media (max-width: 768px) {
+            .navbar-toggler {
+                order: -1; 
+            }
+            .navbar-nav {
+                flex-direction: row !important;
+                justify-content: flex-end; /* Align items to the right */
+                width: 100%; /* Full width for nav items */
+            }
+            .navbar-nav .nav-item {
+                margin-left: 10px; /* Add spacing between nav items */
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">My Website</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -145,66 +160,9 @@ HTML :
             <div class="row">
                 <div class="col-md-4">
                     <div class="card mb-4">
-                        <img src="https://via.placeholder.com/350x350" class="card-img-top" alt="Team Member 1">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Team Member 1</h5>
-                            <p class="card-text">Role</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="https://via.placeholder.com/350x350" class="card-img-top" alt="Team Member 2">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Team Member 2</h5>
-                            <p class="card-text">Role</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="https://via.placeholder.com/350x350" class="card-img-top" alt="Team Member 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Team Member 3</h5>
-                            <p class="card-text">Role</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                        <img src
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>CONTACT 1: 9441623079</p>
-                </div>
-                <div class="col-md-6">
-                    <p>CONTACT 2: 9491662040</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer text-center">
-        <div class="container">
-            <p>&copy; 2024 My Website. All Rights Reserved.</p>
-            <a href="#home">Back to top</a>
-        </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
-
-
-CSS :
+css :
 
 /* styles.css */
 body {
